@@ -3,8 +3,14 @@
 
 var myApp = angular.module('myApp', ['ui.router', 'firebase'])
 
-.config(function($stateProvider) {
+.config(function($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise('/home');
+    
 	$stateProvider
+    .state('home', {
+        url: '/home',
+        templateUrl: 'templates/front.html'
+    })
 	.state('about', {
 		url:'/about',
 		templateUrl:'templates/about.html',
