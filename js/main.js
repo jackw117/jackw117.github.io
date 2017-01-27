@@ -5,10 +5,6 @@ var myApp = angular.module('myApp', ['ui.router', 'firebase'])
 
 .config(function($stateProvider) {
 	$stateProvider
-    .state('home', {
-        url:'/',
-        templateUrl:'templates/front.html',
-    })
 	.state('about', {
 		url:'/about',
 		templateUrl:'templates/about.html',
