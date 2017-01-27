@@ -1,0 +1,19 @@
+<!-- project html file that displays all of the projects I have worked on and gives authorized users (only me) the option to add and delete projects -->
+
+<div id="projectDiv">
+	<!-- title of this section of the website -->
+	<div class="headerDiv">
+		<h2>Projects</h2>
+	</div>
+
+	<!-- where all the projects are displayed -->
+	<div>
+		<div class="repeatDiv" ng-repeat="project in projectInfo">
+			<div class="col-sm-6">
+				<h3>{{project.title}}</h3>
+				<a href="{{project.link}}"><img class="cover" src="{{project.image}}"></a>
+				<p>{{project.description}}</p>
+			</div>
+		</div>
+	</div>
+</div>
