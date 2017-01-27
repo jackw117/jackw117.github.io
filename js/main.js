@@ -3,7 +3,7 @@
 
 var myApp = angular.module('myApp', ['ui.router', 'firebase'])
 
-.config(function($stateProvider, $locationProvider) {
+.config(function($stateProvider, $locationProvider, $urlRouterProvider) {
 	$stateProvider
     .state('home', {
         url:'/',
@@ -19,6 +19,7 @@ var myApp = angular.module('myApp', ['ui.router', 'firebase'])
 		controller:'ProjectsController',
 	});
     $locationProvider.html5Mode(true);
+    $urlRouterProvider.otherwise("/");
 })
 
 //controller for the projects page
