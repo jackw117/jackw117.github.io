@@ -93,6 +93,16 @@ img {
 	text-align: center;
 }
 
+.projectLink:link {
+	opacity: 1;
+	transition: .5s ease;
+}
+
+.projectLink:hover {
+	opacity: 0.3;
+	transition: .5s ease;
+}
+
 /* style rules for screens larger than 768 pixels */
 @media screen and (min-width: 768px) {
 	.col-sm-6 {
