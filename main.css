@@ -41,9 +41,16 @@ nav {
 }
 
 #projectsList {
+	padding: 0px;
 	list-style: none;
+	width: 50%;
+	margin: auto;
 }
 
 #projectsList img {
 	height: 350px;
+}
+
+#projectsList li {
+	text-align: center;
 }
