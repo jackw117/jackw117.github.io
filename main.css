@@ -1,0 +1,49 @@
+/* the css file for my Personal Portfolio page */
+
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+
+nav {
+	min-height: 50px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+}
+
+#aboutContainer {
+	margin-top: 70px;
+}
+
+#buttons {
+	line-height: 50px;
+	vertical-align: center;
+	padding: 0px;
+	list-style: none;
+	float: right;
+}
+
+#buttons li {
+	display: inline;
+}
+
+#buttons li a:hover {
+	background-color: #4CAF50;
+    color: white;
+}
+
+#name {
+	line-height: 50px;
+	vertical-align: center;
+}
+
+#navbar {
+
+}
+
+#projectsList {
+	list-style: none;
+}
+
+#projectsList img {
+	height: 350px;
+}
