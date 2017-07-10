@@ -3,15 +3,24 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 
+h1 {
+	text-align: center;
+}
+
 nav {
 	min-height: 50px;
 	position: fixed;
 	width: 100%;
 	top: 0px;
+	background-color: rgba(50, 50, 50, .80);
 }
 
-#aboutContainer {
-	margin-top: 70px;
+table {
+	width: 100%;
+}
+
+th, td {
+	text-align: center;
 }
 
 #buttons {
@@ -20,6 +29,7 @@ nav {
 	padding: 0px;
 	list-style: none;
 	float: right;
+	margin-bottom: 0px;
 }
 
 #buttons li {
@@ -31,13 +41,15 @@ nav {
     color: white;
 }
 
+#contactTable td {
+	width: 33%;
+}
+
 #name {
 	line-height: 50px;
 	vertical-align: center;
-}
-
-#navbar {
-
+	color: white;
+	font-size: 18px;
 }
 
 #projectsList {
@@ -53,4 +65,12 @@ nav {
 
 #projectsList li {
 	text-align: center;
+}
+
+#skillsTable td, #skillsTable th {
+	width: 25%;
+}
+
+.redirect {
+	margin-top: 70px;
 }
