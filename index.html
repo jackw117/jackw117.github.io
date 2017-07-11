@@ -13,6 +13,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
         <link rel="stylesheet" href="main.css" type="text/css"> 
         <script type="text/javascript" src="main.js"></script>
 
@@ -25,50 +27,53 @@
                 <span id="name">Jack Whitesell</span>
                 <ul id="buttons">
                    <li>
-                       <a class="btn btn-default navlink" href="#about">About</a>
+                       <a class="navlink" href="#about">About</a>
                    </li>
                    <li>
-                       <a class="btn btn-default navlink" href="#projects">Projects</a>
+                       <a class="navlink" href="#projects">Projects</a>
                    </li>
                    <li>
-                       <a class="btn btn-default navlink" href="#contact">Contact</a>
+                       <a class="navlink" href="#contact">Contact</a>
                    </li>
                 </ul> 
             </div>
         </nav>
 
-        <div class="container redirect" id="about">
-            <h1>About Me</h1>
-            <p>I'm a full stack developer in Seattle, WA. I graduated from the University of Washington, in the Informatics program with a focus on web development and cybersecurity. Feel free to look <a class="navlink" href="#projects">below</a> for some of the projects I've worked on, or get in contact with me at <a href="mailto:jackw117@uw.edu">jackw117@uw.edu</a>.</p>
+        <div class="redirect" id="about">
+            <div class="container" id="aboutContainer">
+                <h1>About Me</h1>
+                <p>I'm a full stack developer in Seattle, WA. I graduated from the University of Washington, in the Informatics program with a focus on web development and cybersecurity. Feel free to look below for some of the projects I've worked on, or get in contact with me at <a href="mailto:jackw117@uw.edu">jackw117@uw.edu</a>.</p>
 
-            <table id="skillsTable">
-                <tr>
-                    <th>Front End</th>
-                    <th>Back End</th>
-                    <th>Database</th>
-                    <th>Security</th>
-                </tr>
-                <tr>
-                    <td>HTML/CSS</td>
-                    <td>.NET Core</td>
-                    <td>PostgreSQL</td>
-                    <td>SQLi</td>
-                </tr>
-                <tr>
-                    <td>JavaScript</td>
-                    <td>Java</td>
-                    <td>MySQL</td>
-                    <td>XSS</td>
-                </tr>
-                <tr>
-                    <td>AngularJS</td>
-                    <td>PHP</td>
-                </tr>
-                <tr>
-                    <td>jQuery</td>
-                    <td>C#</td>
-                </tr>
-            </table>
+                <h2>Technical Skills</h2>
+                <table id="skillsTable">
+                    <tr>
+                        <th>Front End</th>
+                        <th>Back End</th>
+                        <th>Database</th>
+                        <th>Security</th>
+                    </tr>
+                    <tr>
+                        <td>HTML/CSS</td>
+                        <td>.NET Core</td>
+                        <td>PostgreSQL</td>
+                        <td>SQLi</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Java</td>
+                        <td>MySQL</td>
+                        <td>XSS</td>
+                    </tr>
+                    <tr>
+                        <td>AngularJS</td>
+                        <td>PHP</td>
+                    </tr>
+                    <tr>
+                        <td>jQuery</td>
+                        <td>C#</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <div class="redirect" id="projects">
@@ -94,21 +99,29 @@
             </ul>
         </div>
 
-        <div class="container redirect" id="contact">
-            <h1>Contact Information</h1>
-            <table id="contactTable">
-                <tr>
-                    <td>
-                        <a href="mailto:jackw117@uw.edu"><i class="fa fa-lg fa-envelope"></i> jackw117@uw.edu</a>
-                    </td>
-                    <td>
-                        <a class="contact" href="https://github.com/jackw117"><i class="fa fa-lg fa-github"></i> jackw117</a>
-                    </td>
-                    <td>
-                        <a class="contact" href="https://www.linkedin.com/in/jack-whitesell/"><i class="fa fa-lg fa-linkedin-square"></i> Jack Whitesell</a>
-                    </td>
-                </tr>
-            </table>
+        <div class="redirect" id="contact">
+            <div class="container" id="contactContainer">
+                <h1>Contact Information</h1>
+                <table id="contactTable">
+                    <tr>
+                        <td>
+                            <a href="mailto:jackw117@uw.edu"><i class="fa fa-lg fa-envelope"></i> jackw117@uw.edu</a>
+                        </td>
+                        <td>
+                            <a class="contact" href="https://github.com/jackw117"><i class="fa fa-lg fa-github"></i> jackw117</a>
+                        </td>
+                        <td>
+                            <a class="contact" href="https://www.linkedin.com/in/jack-whitesell/"><i class="fa fa-lg fa-linkedin-square"></i> Jack Whitesell</a>
+                        </td>
+                    </tr>
+                </table>
+
+                <form>
+                    <input type="text" name="name">
+                    <input type="text" name="email">
+                    <textarea></textarea>
+                </form>
+            </div> 
         </div>
     </body>
 </html>

@@ -3,8 +3,14 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 
-h1 {
+body {
+	font-family: Roboto, sans-serif;
+}
+
+h1, h2 {
 	text-align: center;
+	margin-top: 0px;
+	font-weight: bold;
 }
 
 nav {
@@ -12,7 +18,7 @@ nav {
 	position: fixed;
 	width: 100%;
 	top: 0px;
-	background-color: rgba(50, 50, 50, .80);
+	background-color: rgba(50, 50, 50, .90);
 }
 
 table {
@@ -21,6 +27,15 @@ table {
 
 th, td {
 	text-align: center;
+}
+
+#about, #contact {
+	background-color: #175676;
+	color: white;
+}
+
+#about a, #contact a {
+	color: #b4a892;
 }
 
 #buttons {
@@ -34,11 +49,6 @@ th, td {
 
 #buttons li {
 	display: inline;
-}
-
-#buttons li a:hover {
-	background-color: #4CAF50;
-    color: white;
 }
 
 #contactTable td {
@@ -71,6 +81,25 @@ th, td {
 	width: 25%;
 }
 
+.navlink {
+	text-decoration: none;
+	color: white;
+	margin-left: 20px;
+}
+
+.navlink:active {
+	color: white;
+}
+
+.navlink:hover {
+	color: white;
+}
+
+.navlink:visited {
+	color: white;
+}
+
 .redirect {
-	margin-top: 70px;
+	padding-top: 70px;
+	padding-bottom: 40px;
 }
