@@ -91,11 +91,11 @@ th, td {
 	color: white;
 }
 
-.navlink:hover {
+.navlink:visited {
 	color: white;
 }
 
-.navlink:visited {
+.navlink:hover {
 	color: white;
 }
 
