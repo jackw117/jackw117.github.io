@@ -31,7 +31,7 @@ $(function() {
     		projects.css('text-decoration', 'underline');
     		contact.css('text-decoration', 'none');
     	}
-    	else {
+    	if ((current + $(window).height()) > $(document).height() - $('#contact').outerHeight()) {
     		about.css('text-decoration', 'none');
     		projects.css('text-decoration', 'none');
     		contact.css('text-decoration', 'underline');

@@ -18,7 +18,7 @@ nav {
 	position: fixed;
 	width: 100%;
 	top: 0px;
-	background-color: rgba(50, 50, 50, .90);
+	background-color: rgb(50, 50, 50);
 }
 
 table {
@@ -32,10 +32,6 @@ th, td {
 #about, #contact {
 	background-color: #175676;
 	color: white;
-}
-
-#about a, #contact a {
-	color: #b4a892;
 }
 
 #buttons {
@@ -81,22 +77,19 @@ th, td {
 	width: 25%;
 }
 
+.contact {
+	text-decoration: none!important;
+	color: darkturquoise!important;
+}
+
 .navlink {
 	text-decoration: none;
-	color: white;
+	color: white!important;
 	margin-left: 20px;
 }
 
-.navlink:active {
-	color: white;
-}
-
-.navlink:visited {
-	color: white;
-}
-
 .navlink:hover {
-	color: white;
+	text-decoration: none;
 }
 
 .redirect {
