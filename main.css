@@ -34,6 +34,10 @@ th, td {
 	color: white;
 }
 
+#aboutContainer {
+	padding-top: 20px;
+}
+
 #buttons {
 	line-height: 50px;
 	vertical-align: center;
@@ -58,19 +62,26 @@ th, td {
 	font-size: 18px;
 }
 
-#projectsList {
-	padding: 0px;
-	list-style: none;
-	width: 50%;
-	margin: auto;
+#projects {
+	padding-bottom: 0px!important;
+}
+
+#projectsList h2 {
+	margin-top: 30px;
+	margin-bottom: 60px
 }
 
 #projectsList img {
 	height: 300px;
 }
 
-#projectsList li {
-	text-align: center;
+#projectsList td {
+	vertical-align: top;
+	padding-bottom: 50px;
+}
+
+#projectsList td:nth-child(1) {
+	width: 60%;
 }
 
 #skillsTable td, #skillsTable th {
@@ -80,6 +91,10 @@ th, td {
 .contact {
 	text-decoration: none!important;
 	color: darkturquoise!important;
+}
+
+.fa {
+	margin-right: 5px;
 }
 
 .navlink {
@@ -93,6 +108,6 @@ th, td {
 }
 
 .redirect {
-	padding-top: 70px;
-	padding-bottom: 40px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
