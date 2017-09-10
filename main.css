@@ -2,15 +2,20 @@
 
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
 body {
-	font-family: Roboto, sans-serif;
+	font-family: 'Roboto Slab', sans-serif;
 }
 
-h1, h2 {
-	text-align: center;
-	margin-top: 0px;
+h1 {
+	font-size: 40px;
 	font-weight: bold;
+}
+
+h2 {
+	font-size: 22px;
+	color: gray;
 }
 
 nav {
@@ -19,6 +24,10 @@ nav {
 	width: 100%;
 	top: 0px;
 	background-color: rgb(50, 50, 50);
+}
+
+p {
+	font-size: 20px;
 }
 
 table {
@@ -66,23 +75,23 @@ th, td {
 	padding-bottom: 0px!important;
 }
 
-#projectsList h2 {
+#projectsContainer h2 {
 	margin-top: 30px;
-	margin-bottom: 60px
+	margin-bottom: 20px
 }
 
-#projectsList img {
-	height: 300px;
+#projectsContainer img {
+	max-width: 90%;
 	border-radius: 10px;
 }
 
-#projectsList td {
-	vertical-align: top;
-	padding-bottom: 50px;
+#projectsContainer table {
+	table-layout: fixed;
 }
 
-#projectsList td:nth-child(1) {
-	width: 60%;
+#projectsContainer td {
+	padding-bottom: 70px;
+	text-align: left;
 }
 
 #skillsTable td, #skillsTable th {
@@ -111,4 +120,38 @@ th, td {
 .redirect {
 	padding-top: 50px;
 	padding-bottom: 50px;
+}
+
+.tags {
+	list-style: none;
+	padding: 0px;
+}
+
+.tags li {
+	display: inline-block;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	color: #fef4e9;
+	border: solid 1px #da7c0c;
+	background: #f78d1d;
+	background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}
+
+/* css rules for screen sizes less than 800 */
+@media screen and (max-width: 800px) {
+    #projectsContainer img {
+			max-width: 80%;
+		}
 }
