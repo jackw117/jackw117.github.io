@@ -15,17 +15,17 @@ $(function() {
 	    });
 	});
 
-    $(document).on('mousewheel', function() {
+    $(document).scroll(function() {
     	linkDecoration();
     });
 
     function linkDecoration() {
-    	var current = $(document).scrollTop(); 
+    	var current = $(document).scrollTop();
     	if (current >= 0 && current < projectTop) {
     		about.css('text-decoration', 'underline');
     		projects.css('text-decoration', 'none');
     		contact.css('text-decoration', 'none');
-    	} 
+    	}
     	else if (current >= projectTop && current < contactTop) {
     		about.css('text-decoration', 'none');
     		projects.css('text-decoration', 'underline');

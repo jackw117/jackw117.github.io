@@ -64,6 +64,10 @@ th, td {
 	width: 33%;
 }
 
+#contactTable a {
+	font-size: 20px;
+}
+
 #name {
 	line-height: 50px;
 	vertical-align: center;
@@ -143,26 +147,37 @@ th, td {
 
 /* css rules for screen sizes less than 800 */
 @media screen and (max-width: 800px) {
-    #projectsContainer img {
-			margin: auto;
-			display: block;
-			max-width: 80%;
-		}
+	#contactTable, #contactTable td, #contactTable tr, #contactTable tbody {
+		display: block;
+		width: 100%;
+	}
 
-		#projectsTable, #projectsTable thead, #projectsTable tbody, #projectsTable th, #projectsTable td, #projectsTable tr {
-			display: block;
-		}
+	#contactTable td a {
+		display: block;
+		margin: auto;
+		padding-bottom: 15px;
+	}
 
-		#projectsTable tr:nth-child(odd) {
-			display: flex;
-			flex-direction: column-reverse;
-		}
+	#projectsTable, #projectsTable thead, #projectsTable tbody, #projectsTable th, #projectsTable td, #projectsTable tr {
+		display: block;
+	}
 
-		#projectsTable tr:nth-child(odd) td:last-child {
-			padding-bottom: 0px;
-		}
+	#projectsContainer img {
+		margin: auto;
+		display: block;
+		max-width: 80%;
+	}
 
-		#projectsTable tr:nth-child(even) td:first-child {
-			padding-bottom: 0px;
-		}
+	#projectsTable tr:nth-child(odd) {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	#projectsTable tr:nth-child(odd) td:last-child {
+		padding-bottom: 0px;
+	}
+
+	#projectsTable tr:nth-child(even) td:first-child {
+		padding-bottom: 0px;
+	}
 }
