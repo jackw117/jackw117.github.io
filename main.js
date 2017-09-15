@@ -5,6 +5,7 @@ $(function() {
 	var projects = $('a[href="#projects"]');
 	var contact = $('a[href="#contact"]');
 
+	//animation for clicking on one of the nav bar links
 	$(document).on('click', '.navlink', function(event){
 	    event.preventDefault();
 	    var id = $($.attr(this, 'href'));
@@ -15,10 +16,14 @@ $(function() {
 	    });
 	});
 
+		//any time the user scrolls
     $(document).scroll(function() {
     	linkDecoration();
     });
 
+		//hides underline for nav links that are not in the current view of the webpage
+		//displays the underline for the nav link that is currently being viewed
+		//uses the top of each of the sections to determine which ones to hide/unhide
     function linkDecoration() {
     	var current = $(document).scrollTop();
     	if (current >= 0 && current < projectTop) {
