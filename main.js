@@ -26,12 +26,12 @@ $(function() {
 		//uses the top of each of the sections to determine which ones to hide/unhide
     function linkDecoration() {
     	var current = $(document).scrollTop();
-    	if (current >= 0 && current < projectTop) {
+    	if (current >= 0 && current < projectTop - 50) {
     		about.css('text-decoration', 'underline');
     		projects.css('text-decoration', 'none');
     		contact.css('text-decoration', 'none');
     	}
-    	else if (current >= projectTop && current < contactTop) {
+    	else if (current >= projectTop - 50 && current < contactTop - 50) {
     		about.css('text-decoration', 'none');
     		projects.css('text-decoration', 'underline');
     		contact.css('text-decoration', 'none');
