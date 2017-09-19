@@ -26,6 +26,7 @@ nav {
 	width: 100%;
 	top: 0px;
 	background-color: #24292e;
+	z-index: 1;
 }
 
 p {
@@ -94,33 +95,22 @@ th, td {
 	font-size: 18px;
 }
 
-#projects {
-	padding-bottom: 0px!important;
-}
-
-#projectsContainer h2 {
+#projects h2 {
 	margin-top: 30px;
 	margin-bottom: 20px
 }
 
-#projectsContainer img {
-	max-width: 90%;
-	border-radius: 10px;
-	display: block;
-	margin: auto;
-}
-
-#projectsContainer p {
+#projects p {
 	text-align: justify;
 }
 
-#projectsContainer table {
-	table-layout: fixed;
+#projects .container {
+	padding-top: 35px;
+	padding-bottom: 35px;
 }
 
-#projectsContainer td {
-	padding-bottom: 70px;
-	text-align: left;
+#projects .row:nth-child(even) {
+	background-color: #eee;
 }
 
 #skillsTable td, #skillsTable th {
@@ -136,6 +126,11 @@ th, td {
 	margin-right: 5px;
 }
 
+.imgDiv img {
+	max-width: 100%;
+	border-radius: 10px;
+}
+
 .navlink {
 	text-decoration: none;
 	color: white!important;
@@ -147,8 +142,8 @@ th, td {
 }
 
 .redirect {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 35px;
+	padding-bottom: 35px;
 }
 
 .tags {
@@ -170,39 +165,9 @@ th, td {
 	margin-bottom: 3px;
 }
 
-/* css rules for screen sizes less than 800 */
-@media screen and (max-width: 800px) {
-	#contactTable, #contactTable td, #contactTable tr, #contactTable tbody {
-		display: block;
-		width: 100%;
-	}
-
-	#contactTable td a {
-		display: block;
-		margin: auto;
-		padding-bottom: 15px;
-	}
-
-	#projectsTable, #projectsTable thead, #projectsTable tbody, #projectsTable th, #projectsTable td, #projectsTable tr {
-		display: block;
-	}
-
-	#projectsContainer img {
-		margin: auto;
-		display: block;
-		max-width: 80%;
-	}
-
-	#projectsTable tr:nth-child(odd) {
+@media screen and (max-width: 992px) {
+	/*#projects div:nth-child(even) {
 		display: flex;
 		flex-direction: column-reverse;
-	}
-
-	#projectsTable tr:nth-child(odd) td:last-child {
-		padding-bottom: 0px;
-	}
-
-	#projectsTable tr:nth-child(even) td:first-child {
-		padding-bottom: 0px;
-	}
+	}*/
 }
