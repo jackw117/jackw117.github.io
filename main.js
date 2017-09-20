@@ -7,7 +7,9 @@ $(function() {
 
 	//set the even div image to the correct location when page first loads,
 	//and aligns it to be centered
-	moveImage();
+	$(document).ready(function() {
+		moveImage();
+	});
 
 	//animation for clicking on one of the nav bar links
 	$(document).on('click', '.navlink', function(event){
