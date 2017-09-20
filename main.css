@@ -122,6 +122,10 @@ th, td {
 	color: white!important;
 }
 
+.desc h1 {
+	margin-top: 0px;
+}
+
 .fa {
 	margin-right: 5px;
 }

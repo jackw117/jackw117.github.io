@@ -7,7 +7,7 @@ $(function() {
 
 	//set the even div image to the correct location when page first loads,
 	//and aligns it to be centered
-	moveImg();
+	moveImage();
 
 	//animation for clicking on one of the nav bar links
 	$(document).on('click', '.navlink', function(event){
@@ -48,17 +48,20 @@ $(function() {
   }
 
 	//called each time the page is resized
-	$(window).resize(function() {
-		moveImg();
+	$(window).on('resize', function() {
+		moveImage();
 	});
 
 	//places the image on even rows in the projects table in the left column when
 	//window size is over 974 and below the description on anything less
-	//calls the imageAlign function on complete
-	function moveImg() {
+	//calls the imageAlign function on complete if on devices larger than 974 pixels wide
+	function moveImage() {
 		if ($(window).width() <= 974) {
-			$('.evenImg').each(function() {
-				$(this).insertAfter($(this).closest('.container').children('.evenDiv'));
+			$('.imgDiv').each(function() {
+				if ($(this).hasClass('evenImg')) {
+					$(this).insertAfter($(this).closest('.container').children('.evenDiv'));
+				}
+				$(this).css('margin-top', '35px');
 			});
 		} else {
 			$('.evenImg').each(function() {
@@ -68,23 +71,31 @@ $(function() {
 		}
 	}
 
-	//aligns an image in the center of the containing div
+	//aligns the two columns in the projects table to both be centered in the containing row
 	function imageAlign() {
 		$('.row').children('.container').each(function() {
-			var divHeight = $(this).height();
-			var imageHeight = 0;
-			var image = $(this).find('img');
-			if (!image.prop('complete')) {
-				image.on('load', function() {
-					console.log(image.height());
-					imageHeight = image.height();
+			var descDiv = $(this).find('.desc');
+			var descHeight = $(this).find('.desc').height();
+			var imageDiv = $(this).find('.imgDiv');
+			var imageHeight = imageDiv.height();
+			if (!imageDiv.prop('complete')) {
+				imageDiv.on('load', function() {
+					imageHeight = imageDiv.height();
 				});
 			} else {
-				imageHeight = image.height();
+				imageHeight = imageDiv.height();
 			}
-			console.log(imageHeight);
 			if (imageHeight != 0) {
-				image.css('margin-top', (divHeight - imageHeight) / 2);
+				if (imageHeight < descHeight) {
+					imageDiv.css('margin-top', (descHeight - imageHeight) / 2 + 'px');
+					descDiv.css('margin-top', '0px');
+				} else if (descHeight < imageHeight) {
+					imageDiv.css('margin-top', '0px');
+					descDiv.css('margin-top', (imageHeight - descHeight) / 2 + 'px');
+				} else {
+					imageDiv.css('margin-top', '0px');
+					descDiv.css('margin-top', '0px');
+				}
 			}
 		});
 	}
