@@ -150,6 +150,11 @@ th, td {
 	padding-bottom: 35px;
 }
 
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
 .tags {
 	list-style: none;
 	padding: 0px;
