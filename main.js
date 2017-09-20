@@ -7,7 +7,7 @@ $(function() {
 
 	//set the even div image to the correct location when page first loads,
 	//and aligns it to be centered
-	$(document).ready(function() {
+	$(window).on('load', function() {
 		moveImage();
 	});
 
