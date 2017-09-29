@@ -114,7 +114,7 @@ ul {
 	margin-top: 2500px;
 }
 
-@media only screen and (min-width: 2500px) {
+@media only screen and (min-width: 2000px) {
 	img {
 		height: 225px;
 	}
