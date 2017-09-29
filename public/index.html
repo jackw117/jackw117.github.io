@@ -19,34 +19,54 @@
     </head>
 
     <body ng-app="myApp" ng-controller="myCtrl">
-        <div>
+        <div id="raffle">
             <div id="buttonDiv">
-                <button type="button" class="btn btn-primary" ng-click="getNames()">Who Wins?!</button>
+                <button type="button" class="winbtn" ng-click="getNames()">Who Wins?</button>
                 <div ng-hide="!winnerClick" id="winner">
                     <p id="winnerText">{{winner}}</p>
                     <br>
-                    <img src="gif/Happy/a1Wdi.gif">
-                    <img src="gif/Happy/giphy (4).gif">
-                    <img src="gif/Happy/giphy (5).gif">
-                    <img src="gif/Happy/giphy (6).gif">
-                    <img src="gif/Happy/giphy (7).gif">
-                    <img src="gif/Happy/tumblr_ny8x2tcfz31uzwbyjo1_500.gif">
-                    <img src="gif/Happy/Mini+kureha+mayo+chiki+gifs_42f822_5872577.gif">
-                    <img src="gif/Happy/MMYwk.gif">
-                    <img src="gif/Happy/tumblr_m945unMT521ryuvn6o1_400.gif">
-                    <img src="gif/Happy/tumblr_mjbfnaK2bt1r922azo1_250.gif">
-                    <img src="gif/Happy/tumblr_mwdaweXl7k1sq9yswo2_500.gif">
-                    <img src="gif/Happy/tumblr_nwyi3nmzD51s5f9ado1_540.gif">
-                    <img src="gif/Happy/tumblr_o1sqo6Wzr21u0yruro1_500.gif">
-                    <img src="gif/Happy/tumblr_static_tumblr_static_2p47ogg0mhus4gs8skwwcc8sw_640.gif">
-                    <img src="gif/Happy/tumblr_static_tumblr_static_4brxy52ym9esgowcw4kwo04gc_640.gif">
-                    <img src="gif/Happy/vrkzN3k.gif">
-                    <img src="gif/Happy/zcMwgrO.gif">
-                    <img src="gif/Happy/tumblr_static_tumblr_static_apo_space_brothers_bros_happy_pug_puggy_face_anime_cute_running_excited_adorable_aww_sweet.gif">
-                    <img src="gif/Happy/tumblr_m8dbfpgZ9T1rzhv5ho1_500.gif">
-                    <img src="gif/Happy/09931c515059396e1bbd8324a88164662d90287f_hq.gif">
                 </div>
             </div>
         </div>
+
+        <div ng-hide="!winnerClick" id="gifContainer">
+          <img src="img/yui.gif">
+          <img src="img/black-hanekawa.gif">
+          <img src="img/taiga.gif">
+          <img src="img/umaru.gif">
+          <img src="img/haruhi.gif">
+          <img src="img/winry.webp">
+          <img src="img/fuuko.webp">
+          <img src="img/izaya.gif">
+          <img src="img/shinobu.gif">
+          <img src="img/congratulations.gif">
+          <img src="img/kyouma.gif">
+          <img src="img/momo.gif">
+          <img src="img/flcl.webp">
+          <img src="img/rin.gif">
+          <img src="img/whoro.gif">
+          <img src="img/nico.webp">
+          <img src="img/kars.gif">
+          <img src="img/kurapika.gif">
+          <img src="img/bully.gif">
+          <img src="img/pikari.gif">
+          <img src="img/geso.webp">
+          <img src="img/who.gif">
+          <img src="img/madoka.gif">
+          <img src="img/griffith.gif">
+          <img src="img/yamada.webp">
+          <img src="img/usagi.gif">
+          <img src="img/tohru.gif">
+          <img src="img/kininarimasu.gif">
+          <img src="img/nichijou.webp">
+          <img src="img/mikisugi.gif">
+          <img src="img/iri.gif">
+          <img src="img/misaki.gif">
+          <img src="img/kamina.gif">
+          <img src="img/miyako.gif">
+          <img src="img/marika.gif">
+          <img src="img/trash.gif">
+        </div>
+
     </body>
 </html>

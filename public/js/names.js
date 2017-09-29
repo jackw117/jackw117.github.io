@@ -2,10 +2,7 @@ var myApp = angular.module('myApp', []);
 
 var myCtrl = myApp.controller('myCtrl', function($scope) {
 
-	$scope.membersArray = ["Andrew Kong", "Dylan Hardy", "Joseph Mohammed", "Ian Houghton",
-							"An Sung", "Cameron Pinkham", "Keiva Augilera-Montea", 
-							"Kathy Chiu", "Kevin Anderson", "Michael Bui", "Danny Sotelo",
-							"Cai Biesinger", "Zoe Solvay"];
+	$scope.membersArray = ["Jack Whitesell"];
 
 	$scope.getNames = function() {
 		if ($scope.membersArray.length != 0) {
