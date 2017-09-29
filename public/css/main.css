@@ -118,4 +118,8 @@ ul {
 	img {
 		height: 225px;
 	}
+
+	#winner {
+		margin-top: 360px;
+	}
 }
