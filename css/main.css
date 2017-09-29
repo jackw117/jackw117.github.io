@@ -49,6 +49,17 @@ ul {
 	width: 130%;
 }
 
+#logo {
+	position: absolute;
+	bottom: 0;
+	opacity: 1;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
 #raffle {
 	position: absolute;
 	width: 100%;
